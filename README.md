@@ -5,21 +5,23 @@
 
 A **System-on-Chip (SoC)** is an integrated circuit that combines essential components of a computing system onto a single silicon die. Unlike traditional multi-chip systems, SoCs integrate processing, memory, peripherals, and communication interfaces into one compact and efficient package. This integration allows SoCs to power a wide range of devices, from smartphones and IoT devices to embedded systems and high-performance computing platforms.
 
----
-
 ## Core Components of a Typical SoC
 
-| Component                       | Description                                                                                                                                 |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **CPU / Processor Core(s)**     | Executes instructions, runs operating systems or applications. Can be based on architectures like ARM, RISC-V, or custom designs.           |
-| **Memory & Controllers**        | On-chip SRAM, caches, ROM, or interfaces to external DRAM/Flash. Memory controllers manage data flow between CPU and memory.                |
-| **Peripherals / Interfaces**    | Modules for external communication: UART, SPI, I²C, GPIO, timers, USB, ADC/DAC, etc.                                                        |
-| **Interconnect (Bus / NoC)**    | The communication fabric linking CPU, memory, and peripherals. Common standards include AMBA (AHB/AXI) or network-on-chip (NoC) topologies. |
-| **Clocking & Power Management** | Includes PLLs, clock trees, resets, power domains, and dynamic voltage/frequency scaling.                                                   |
-| **Interrupt & Control Logic**   | Handles interrupts, arbitration, and system-level control.                                                                                  |
-| **Debug & Security Modules**    | Debug interfaces (e.g., JTAG), cryptographic accelerators, and secure execution environments.                                               |
+ComponentDescription
 
----
+**CPU / Processor Core(s)** execute instructions, run operating systems, or applications. Can be based on architectures like ARM, RISC-V, or custom designs.
+
+**Memory & Controllers**: On-chip SRAM, caches, ROM, or interfaces to external DRAM/Flash. Memory controllers manage data flow between the CPU and memory.
+
+**Peripherals/Interfaces**: Modules for external communication include UART, SPI, I²C, GPIO, timers, USB, ADC/DAC, etc.
+
+**Interconnect (Bus / NoC)**: The communication fabric linking CPU, memory, and peripherals. Common standards include AMBA (AHB/AXI) or network-on-chip (NoC) topologies.
+
+**Clocking & Power Management** Includes PLLs, clock trees, resets, power domains, and dynamic voltage/frequency scaling.
+
+**Interrupt & Control Logic** Handles interrupts, arbitration, and system-level control.
+
+**Debug & Security Modules** Debug interfaces (e.g., JTAG), cryptographic accelerators, and secure execution environments.
 
 ## Why BabySoC?
 
@@ -39,8 +41,6 @@ A **System-on-Chip (SoC)** is an integrated circuit that combines essential comp
 
 Thus, BabySoC acts as a **pedagogical microcosm**, letting students practice SoC design flow end-to-end.
 
----
-
 ## The Role of Functional Modeling
 
 Before committing to RTL and physical design, **functional models** are created at higher abstraction levels (e.g., SystemC, C models, or transaction-level models). Their importance includes:
@@ -51,10 +51,9 @@ Before committing to RTL and physical design, **functional models** are created 
 4. **Early Debugging:** Detects interface mismatches and high-level design flaws.
 5. **Bridging Abstractions:** Supports mixed-level co-simulation, combining functional models with partial RTL.
 
-Functional modeling acts as the **golden reference** for downstream verification, making RTL and physical design stages more reliable and less error-prone.
-
----
+Functional modeling serves as the **golden reference** for downstream verification, making the RTL and physical design stages more reliable and less prone to errors.
 
 ## Conclusion
 
-SoC design integrates computation, memory, I/O, and interconnect into a single chip, enabling compact and powerful systems. BabySoC serves as an excellent starting point for learners to explore this journey. By working through functional modeling, RTL, synthesis, and layout in a simplified environment, students gain the foundation needed to tackle complex SoC challenges in the future.
+SoC design integrates computation, memory, I/O, and interconnect into a single chip, enabling compact and robust systems. BabySoC serves as an excellent starting point for learners to explore this journey. By working through functional modeling, RTL, synthesis, and layout in a simplified environment, students gain the foundation needed to tackle complex SoC challenges in the future.
+
